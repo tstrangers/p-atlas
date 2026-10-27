@@ -10,6 +10,8 @@
 
 <a href="docs/media/cover-4k.jpg"><img src="docs/media/cover-4k.jpg" alt="p-atlas · 把收藏变成一片星图 · 4K 封面" width="600"></a>
 
+[下载 4K 视频](https://github.com/tstrangers/p-atlas/releases/download/v1.0.0/p-atlas_3x4_4K_2880x3840.mp4) · [4K 无配乐版](https://github.com/tstrangers/p-atlas/releases/download/v1.0.0/p-atlas_3x4_4K_2880x3840_silent.mp4) · [原尺寸封面](docs/media/cover-4k.jpg)
+
 原生 JavaScript · Canvas 2D · WebGL · 无框架运行依赖 · 纯静态部署
 
 </div>

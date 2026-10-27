@@ -6,6 +6,8 @@
 
 <a href="docs/media/cover-4k.jpg"><img src="docs/media/cover-4k.jpg" alt="p-atlas · 4K portrait cover" width="600"></a>
 
+[Download 4K MP4](https://github.com/tstrangers/p-atlas/releases/download/v1.0.0/p-atlas_3x4_4K_2880x3840.mp4) · [4K without music](https://github.com/tstrangers/p-atlas/releases/download/v1.0.0/p-atlas_3x4_4K_2880x3840_silent.mp4)
+
 The release includes a 30-second, 30fps **2880×3840 (3:4) video**, with and without music. It uses the native 3840-square sphere export and freshly rendered typography and cards, rather than stretching the previous 1080p video. [Full-resolution cover](docs/media/cover-4k.jpg) · [Native scene preview](docs/media/hero-4k.jpg).
 
 Rotate a glowing sphere, select a star, and discover its image, prompt, personalization profiles and generation parameters. Images sharing a P profile are connected by animated gradient lines.
