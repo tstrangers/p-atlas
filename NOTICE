@@ -1,0 +1,8 @@
+P Atlas original code and documentation: MIT (see LICENSE).
+
+The MIT grant does not cover collection images, prompts, P profile
+configurations or promotional media. See CONTENT_LICENSE.md.
+
+No proprietary React Bits Pro implementation is included in this repository.
+The production website and this public edition have different background
+renderers. See README.md for the distinction and third-party references.
