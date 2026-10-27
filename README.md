@@ -27,6 +27,19 @@
 
 示例收藏含 **378 张原始记录 → 339 个星点 · 501 个不同 P 值**。连线表示共享 P 值，**不是**语义相似度、模型训练关系或效果保证。这里的 P 指 Midjourney 的 `--p` / `--profile` 个性化参数，不是统计学 p-value。
 
+<details>
+<summary>展开动态演示与功能画面</summary>
+
+<p align="center"><img src="docs/media/demo.gif" alt="P Atlas 球体烟雾与地形波纹动态演示" width="360"></p>
+
+| 星点详情 | 大图预览 |
+| --- | --- |
+| ![P 值、图片与提示词](docs/media/details.jpg) | ![站内大图预览](docs/media/preview.jpg) |
+
+完整 30 秒 MP4、无配乐版和 3:4 封面可从 [Release](https://github.com/tstrangers/p-atlas-open-source/releases/latest) 下载。
+
+</details>
+
 ## 立即运行
 
 下载仓库后，在项目目录运行：
