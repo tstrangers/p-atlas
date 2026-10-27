@@ -1,0 +1,202 @@
+[
+  {
+    "number": 1,
+    "name": "原始星图球体",
+    "image": "media/iterations/01_original.jpg"
+  },
+  {
+    "number": 2,
+    "name": "流动薄雾光晕",
+    "image": "media/iterations/02_flowing-aura.jpg"
+  },
+  {
+    "number": 3,
+    "name": "紫色层叠体积光",
+    "image": "media/iterations/03_purple-volume.jpg"
+  },
+  {
+    "number": 4,
+    "name": "青紫翻滚球壳",
+    "image": "media/iterations/04_tumbling-shells.jpg"
+  },
+  {
+    "number": 5,
+    "name": "规律球面波纹",
+    "image": "media/iterations/05_regular-ripples.jpg"
+  },
+  {
+    "number": 6,
+    "name": "真实表面起伏",
+    "image": "media/iterations/06_surface-deformation.jpg"
+  },
+  {
+    "number": 7,
+    "name": "辉光与曝光",
+    "image": "media/iterations/07_bloom-exposure.jpg"
+  },
+  {
+    "number": 8,
+    "name": "连续烟雾涟漪",
+    "image": "media/iterations/08_volume-ripples.jpg"
+  },
+  {
+    "number": 9,
+    "name": "三源随机地形等高线",
+    "image": "media/iterations/09_three-random-sources.jpg"
+  },
+  {
+    "number": 10,
+    "name": "六团分离体积云",
+    "image": "media/iterations/10_six-clouds.jpg"
+  },
+  {
+    "number": 11,
+    "name": "紫色体积早期参数",
+    "image": "media/iterations/11_purple-volume-early.jpg"
+  },
+  {
+    "number": 12,
+    "name": "球面起伏波纹初版",
+    "image": "media/iterations/12_recovered-surface-radial-initial.jpg"
+  },
+  {
+    "number": 13,
+    "name": "球面起伏波纹采样改进",
+    "image": "media/iterations/13_recovered-surface-radial-refined.jpg"
+  },
+  {
+    "number": 14,
+    "name": "轻度扭曲球面波纹",
+    "image": "media/iterations/14_recovered-surface-warped-radial.jpg"
+  },
+  {
+    "number": 15,
+    "name": "柔和分布式表面起伏",
+    "image": "media/iterations/15_recovered-surface-distributed-gentle.jpg"
+  },
+  {
+    "number": 16,
+    "name": "连续体积云初版",
+    "image": "media/iterations/16_recovered-volume-continuous-initial.jpg"
+  },
+  {
+    "number": 17,
+    "name": "六团分离体积云",
+    "image": "media/iterations/17_recovered-volume-six-clumps.jpg"
+  },
+  {
+    "number": 18,
+    "name": "连续烟雾涟漪初版",
+    "image": "media/iterations/18_recovered-volume-ripple-initial.jpg"
+  },
+  {
+    "number": 19,
+    "name": "增强连续烟雾涟漪",
+    "image": "media/iterations/19_recovered-volume-ripple-stronger.jpg"
+  },
+  {
+    "number": 20,
+    "name": "流体烟雾初版",
+    "image": "media/iterations/20_recovered-fluid-initial.jpg"
+  },
+  {
+    "number": 21,
+    "name": "流体烟雾暗隙版",
+    "image": "media/iterations/21_recovered-fluid-concentrated.jpg"
+  },
+  {
+    "number": 22,
+    "name": "高分辨率旋涡试验",
+    "image": "media/iterations/22_recovered-vortices-high-resolution.jpg"
+  },
+  {
+    "number": 23,
+    "name": "旋涡求解器修正版",
+    "image": "media/iterations/23_recovered-vortices-solver-fix.jpg"
+  },
+  {
+    "number": 24,
+    "name": "旋涡细长尾迹",
+    "image": "media/iterations/24_recovered-vortices-thin-trails.jpg"
+  },
+  {
+    "number": 25,
+    "name": "旋涡暗心与薄烟",
+    "image": "media/iterations/25_recovered-vortices-dark-cores.jpg"
+  },
+  {
+    "number": 26,
+    "name": "旋涡染料限幅版",
+    "image": "media/iterations/26_recovered-vortices-bounded-dye.jpg"
+  },
+  {
+    "number": 27,
+    "name": "固定中心旋涡",
+    "image": "media/iterations/27_recovered-vortices-fixed.jpg"
+  },
+  {
+    "number": 28,
+    "name": "固定旋涡浓雾版",
+    "image": "media/iterations/28_recovered-vortices-more-fog.jpg"
+  },
+  {
+    "number": 29,
+    "name": "移动中心旋涡",
+    "image": "media/iterations/29_recovered-vortices-moving.jpg"
+  },
+  {
+    "number": 30,
+    "name": "双倍速度烟雾涟漪",
+    "image": "media/iterations/30_recovered-smoke-ripple-fast.jpg"
+  },
+  {
+    "number": 31,
+    "name": "烟雾涟漪去底部轨道",
+    "image": "media/iterations/31_recovered-smoke-no-bottom-orbit.jpg"
+  },
+  {
+    "number": 32,
+    "name": "单源不规则扩散圈初版",
+    "image": "media/iterations/32_recovered-expanding-rings-initial.jpg"
+  },
+  {
+    "number": 33,
+    "name": "单源闭合不规则扩散圈",
+    "image": "media/iterations/33_recovered-expanding-irregular-rings.jpg"
+  },
+  {
+    "number": 34,
+    "name": "单源地形等高线",
+    "image": "media/iterations/34_recovered-terrain-contours-single.jpg"
+  },
+  {
+    "number": 35,
+    "name": "游走单源密集等高线",
+    "image": "media/iterations/35_recovered-terrain-contours-moving-dense.jpg"
+  },
+  {
+    "number": 36,
+    "name": "三源融合等高线",
+    "image": "media/iterations/36_recovered-terrain-contours-three.jpg"
+  },
+  {
+    "number": 37,
+    "name": "三源宽幅游走与强中弱等高线",
+    "image": "media/iterations/37_recovered-terrain-contours-roaming-strength.jpg"
+  },
+  {
+    "number": 38,
+    "name": "三源随机发波等高线",
+    "image": "media/iterations/38_recovered-terrain-contours-random-births.jpg"
+  },
+  {
+    "number": 39,
+    "name": "纯色背景与连线流光",
+    "image": "media/iterations/39_current-flow.jpg"
+  },
+  {
+    "number": 40,
+    "name": "选中星点第四扩散源",
+    "image": "media/iterations/40_current-selected.jpg"
+  }
+]

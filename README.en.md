@@ -20,6 +20,14 @@ Rotate a glowing sphere, select a star, and discover its image, prompt, personal
 
 The included collection contains 339 nodes and 501 distinct P profiles, deduplicated from 378 records. P refers to Midjourney personalization (`--p` / `--profile`), not a statistical p-value. Edges mean shared profile codes, not semantic similarity.
 
+## Visual exploration
+
+The sphere evolved through layered shells, regular ripples, surface deformation, volumetric smoke, separated clouds, vortices and terrain-like contours. These are real archived renders, including experiments that were later discarded.
+
+[![Nine representative sphere experiments](docs/media/iterations-overview.jpg)](docs/visual-history.md)
+
+The current direction combines continuous smoke with wandering, independently timed contour waves and a selection-driven fourth source. See the **[40-version visual archive](docs/visual-history.md)** for all frames and notes (Chinese). Archive numbers follow the export collection, not a strict development timeline. These are historical experiments, not selectable themes in the current app.
+
 ## Run
 
 ```bash
