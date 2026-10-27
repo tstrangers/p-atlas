@@ -6,7 +6,7 @@
 
 图片、提示词与 P 值不再散落在收藏夹里。旋转星球，点亮一颗星，找回它的画面、参数，以及与其他图片的联系。
 
-[在线体验](https://p-atlas.secondworld.site/) · [30 秒演示视频](https://github.com/tstrangers/p-atlas-open-source/releases/latest) · [数据说明](docs/data.md) · [English](README.en.md)
+[在线体验](https://p-atlas.secondworld.site/) · [30 秒演示视频](https://github.com/tstrangers/p-atlas/releases/latest) · [数据说明](docs/data.md) · [English](README.en.md)
 
 ![P Atlas 演示](docs/media/hero.jpg)
 
@@ -36,7 +36,7 @@
 | --- | --- |
 | ![P 值、图片与提示词](docs/media/details.jpg) | ![站内大图预览](docs/media/preview.jpg) |
 
-完整 30 秒 MP4、无配乐版和 3:4 封面可从 [Release](https://github.com/tstrangers/p-atlas-open-source/releases/latest) 下载。
+完整 30 秒 MP4、无配乐版和 3:4 封面可从 [Release](https://github.com/tstrangers/p-atlas/releases/latest) 下载。视频不含仓库链接、体验网址或引流文案。
 
 </details>
 

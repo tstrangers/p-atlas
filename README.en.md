@@ -2,7 +2,7 @@
 
 **Explore your Midjourney collection as an interactive constellation.**
 
-[Live demo](https://p-atlas.secondworld.site/) · [Video](https://github.com/tstrangers/p-atlas-open-source/releases/latest) · [中文](README.md)
+[Live demo](https://p-atlas.secondworld.site/) · [Video](https://github.com/tstrangers/p-atlas/releases/latest) · [中文](README.md)
 
 ![P Atlas](docs/media/hero.jpg)
 
