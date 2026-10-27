@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#120f17">
+  <title>P Atlas · 灵感星图</title>
+  <meta name="description" content="在球形星图中探索你的 Midjourney 收藏、P 值、提示词与风格关系。">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2307101d'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%237997bc'/%3E%3Cpath d='M32 11L36 28L53 32L36 36L32 53L28 36L11 32L28 28Z' fill='%23b9dce8'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css?v=20261003-full-scene">
+  <script src="data.js" defer></script><script src="shards.js?v=20261003-original-shards" defer></script><script src="aura.js?v=20261003-smooth-gradients" defer></script><script src="app.js?v=20261003-full-scene" defer></script>
+</head>
+<body>
+<div class="app" id="app">
+  <div id="shard-background" class="shard-background" aria-hidden="true"><canvas></canvas></div>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="P Atlas 首页"><span class="brand-mark">p<span>✦</span></span><span class="brand-type">ATLAS<small>灵感星图</small></span></a>
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+      <input id="search" type="search" autocomplete="off" placeholder="搜索 P 值、提示词或图片编号" aria-label="搜索 P 值、提示词或图片编号" aria-controls="search-results" aria-expanded="false">
+      <kbd class="search-shortcut">/</kbd>
+      <div id="search-results" class="search-results" hidden></div>
+    </div>
+    <div class="collection-badge"><span class="badge-star">✧</span> PERSONAL COLLECTION</div>
+  </header>
+  <main class="universe" id="universe">
+    <div class="intro">
+      <p class="eyebrow">MIDJOURNEY / STYLE MAP</p>
+      <h1>P 值<span>星图</span><span class="title-dot">.</span></h1>
+      <p class="intro-note">点击星点，查看图片与提示词。</p>
+      <div class="stats"><div><strong id="node-count">—</strong><span>独立星点</span></div><div><strong id="profile-count">—</strong><span>P 值</span></div></div>
+      <p class="dedup-note" id="dedup-note"></p>
+    </div>
+    <div id="sphere-backdrop" class="sphere-backdrop" aria-hidden="true"></div>
+    <div id="aura" class="aura" aria-hidden="true"><div class="aura-fallback"></div><canvas></canvas></div>
+    <canvas id="sky" tabindex="0" role="application" aria-label="可旋转的三维收藏星图。拖动旋转，滚轮缩放，点击星点查看图片。键盘方向键选择图片，Enter 打开，Escape 关闭。"></canvas>
+    <div class="sphere-caption" aria-hidden="true"><span>YOUR CREATIVE UNIVERSE</span><span id="visible-count"></span></div>
+    <div id="hover-card" class="hover-card" hidden><img alt=""><div><span></span><p></p></div></div>
+    <div id="filter-banner" class="filter-banner" hidden><span id="filter-label"></span><button id="clear-filter" aria-label="清除筛选">清除 ×</button></div>
+    <div id="empty" class="empty-state" hidden><span>没有找到这颗星</span><p>试试其他 P 值、提示词或图片编号。</p><button id="reset-search">显示全部</button></div>
+    <div class="bottom-bar">
+      <div class="legend"><span><i class="single"></i>单个 P 值</span><span><i class="multi"></i>P 值组合</span><span><i class="none"></i>未标注</span><small>连线 = 共享 P 值</small></div>
+      <div class="orbit-controls"><button id="rotate" class="rotation-button" aria-pressed="true"><span id="rotate-icon">Ⅱ</span><span id="rotate-label">自动旋转</span></button><span class="divider"></span><button id="zoom-out" aria-label="缩小">−</button><span id="zoom-label">100%</span><button id="zoom-in" aria-label="放大">＋</button><span class="divider"></span><button id="reset-view" aria-label="重置视角" title="重置视角">↺</button></div>
+      <p class="gesture-hint">拖动旋转 <span>·</span> 滚轮缩放 <span>·</span> 点亮一颗星</p>
+    </div>
+  </main>
+  <aside id="detail" class="detail" role="dialog" aria-modal="false" aria-label="图片与提示词" tabindex="-1" hidden>
+    <div class="detail-top"><span class="eyebrow" id="detail-number"></span><div><button id="previous" class="icon-button" aria-label="上一张">‹</button><button id="next" class="icon-button" aria-label="下一张">›</button><button id="close-detail" class="icon-button close" aria-label="关闭详情">×</button></div></div>
+    <div class="detail-scroll" id="detail-scroll">
+      <button id="image-link" type="button" class="image-stage" aria-label="查看大图" aria-haspopup="dialog"><img id="detail-image" alt="收藏图片"><span class="enlarge">⤢ 查看大图</span><span class="image-error" hidden>图片加载失败，点击重试预览</span></button>
+      <div class="card-content">
+        <section class="detail-section"><div class="section-heading"><h2>P 值</h2><button id="copy-p" class="text-button">复制 P 值</button></div><div id="p-values" class="p-values"></div><p id="p-help" class="small-note"></p></section>
+        <section class="detail-section"><div class="section-heading"><h2>提示词</h2><button id="copy-prompt" class="text-button">复制提示词</button></div><p id="prompt" class="prompt" lang="en"></p></section>
+        <details class="detail-section parameters" open><summary>其他参数<span id="parameter-count"></span></summary><div id="parameters" class="parameter-list"></div></details>
+        <section id="related-section" class="detail-section" hidden><div class="section-heading"><h2>共享 P 值的星点</h2><span id="related-count" class="small-note"></span></div><div id="related" class="related"></div></section>
+        <div class="card-footer"><span id="image-size"></span></div>
+      </div>
+    </div>
+  </aside>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="a11y-status" class="sr-only" aria-live="polite"></div>
+</div>
+<dialog id="image-preview" class="image-preview" aria-labelledby="preview-title">
+  <div class="preview-toolbar"><span id="preview-title"></span><button id="close-preview" type="button" class="icon-button" aria-label="关闭大图预览" autofocus>×</button></div>
+  <div class="preview-stage"><img id="preview-image" alt=""><p id="preview-error" role="status" hidden>图片暂时无法加载，请关闭预览后重试。</p></div>
+  <p class="preview-hint">点击空白处或按 Esc 返回</p>
+</dialog>
+</body>
+</html>

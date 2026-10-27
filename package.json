@@ -1,0 +1,14 @@
+{
+  "name": "p-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An interactive constellation for Midjourney images, prompts and P profiles.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node check-data.mjs && node tests/verify-focused-star.cjs && node tests/verify-aura-precision.cjs && node tests/verify-particles.cjs",
+    "prepare:data": "node prepare.mjs"
+  },
+  "optionalDependencies": {
+    "sharp": "^0.34.0"
+  }
+}

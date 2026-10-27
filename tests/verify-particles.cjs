@@ -1,0 +1,17 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const ctx={draws:0,setTransform(){},fillRect(){this.draws++},save(){},restore(){},translate(){},rotate(){},beginPath(){},fill(){},stroke(){},moveTo(x,y){assert(Number.isFinite(x)&&Number.isFinite(y))},lineTo(x,y){assert(Number.isFinite(x)&&Number.isFinite(y))}};
+const canvas={clientWidth:1280,clientHeight:720,getContext:()=>ctx};
+const host={dataset:{},querySelector:()=>canvas};
+const scope={window:{addEventListener(){},removeEventListener(){}},devicePixelRatio:1};
+vm.createContext(scope);vm.runInContext(fs.readFileSync('dist/shards.js','utf8'),scope);
+const field=new scope.window.AtlasShards(host);
+field.render({dt:16,running:false});assert.equal(ctx.draws,1);assert.equal(field.clock,0);
+field.render({dt:16,running:false});assert.equal(ctx.draws,1);
+field.render({dt:16,running:true});assert.equal(ctx.draws,2);assert(field.clock>0&&field.phase>0);
+const clock=field.clock,phase=field.phase;
+field.render({dt:16,running:false});assert.equal(field.clock,clock);assert.equal(field.phase,phase);
+canvas.clientWidth=390;canvas.clientHeight=844;
+field.render({dt:16,running:false});assert.equal(ctx.draws,3);assert.equal(canvas.width,390);
+field.dispose();field.render({dt:16,running:true});assert.equal(ctx.draws,3);
+assert.equal(host.dataset.ready,'true');
+console.log('PASS: original particle motion, finite geometry, frozen pause, resize and disposal.');
